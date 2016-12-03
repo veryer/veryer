@@ -1,10 +1,6 @@
 <?php 
-//获取session，用session作为带参数二维码中scene,默认情况下session为字符串，但带参数的临时二维码需要32位整数，可以把session设置为整型
 
-//session_id("自定义sessionid");
-session_start();
-$sessionid = session_id();
-define("SCENE_ID", $sessionid);	
+define("SCENE_ID", "这里填写需要的sceneid");	
 define("APPID", "这里填写开发者应用appid");
 define("APPSECRET", "这里填写开发者应用appsecret");
 
